@@ -3,7 +3,8 @@
 
 body {
     background: black;
-    color: white;
+    color: #eee;
+    padding-bottom: 40px;
 }
 
 /* Header */
@@ -60,6 +61,14 @@ ul.menu {
     margin-right: 2ex;
 }
 
+/* Footer */
+
+.footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid silver;
+}
+
 /* Typography */
 
 body {
@@ -74,9 +83,8 @@ h1, h2, h3 {
     color: #ff7e79;
 }
 
-h1 {
-    font-size: 300%;
-}
+h1 { font-size: 300%; }
+h2 { font-size: 150%; }
 
 a {
     color: #73fdff;
