@@ -1,0 +1,65 @@
+@import url(http://fonts.googleapis.com/css?family=Dosis&subset=latin,latin-ext);
+
+body {
+    background: black;
+    color: white;
+}
+
+/* Header */
+
+.zahlavi {
+    border-bottom: 1px solid silver;
+    margin-bottom: 20px;
+}
+
+.sluka {
+    width: 420px;
+    height: 290px;
+    background: url(/img/sluka.jpg);
+    background-size: cover;
+    margin-bottom: 40px;
+}
+
+.herci {
+    width: 500px;
+    height: 500px;
+    background: url(/img/herci.jpg);
+    background-size: cover;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+/* Typography */
+
+h1, h2, h3 {
+    text-transform: uppercase;
+    font-family: Dosis, sans-serif;
+    color: #ff7e79;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+/* Animations */
+
+.sluka {
+    -moz-animation: 5s ease 0s normal none infinite swing;
+    -moz-transform-origin: center top;
+    -webkit-animation:swing 5s infinite ease-in-out;
+    -webkit-transform-origin:top;
+}
+
+@-moz-keyframes swing {
+    0%   { -moz-transform:rotate(-2deg) }
+    50%  { -moz-transform:rotate(+2deg) }
+    100% { -moz-transform:rotate(-2deg) }
+}
+
+@-webkit-keyframes swing {
+    0%   { -webkit-transform:rotate(-2deg) }
+    50%  { -webkit-transform:rotate(+2deg) }
+    100% { -webkit-transform:rotate(-2deg) }
+}
