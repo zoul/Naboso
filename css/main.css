@@ -12,17 +12,25 @@ body {
     margin-bottom: 20px;
 }
 
-.sluka {
-    width: 400px;
-    height: 270px;
-    background: url(/img/sluka.jpg);
-    background-size: cover;
+.sluka-kolem {
+    width: 80%;
+    padding-bottom: 54%;
+    padding-left: 10%;
+    position: relative;
     margin-bottom: 40px;
 }
 
+.sluka {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(/img/sluka.jpg);
+    background-size: cover;
+}
+
 .herci {
-    width: 500px;
-    height: 500px;
+    width: 100%;
+    padding-bottom: 100%;
     background: url(/img/herci.jpg);
     background-size: cover;
 }
