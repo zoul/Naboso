@@ -28,8 +28,8 @@ body {
     background-size: cover;
 }
 
-.mala-pulka {
-    text-align: center;
+@media (max-width: 991px) {
+    .mala-pulka { text-align: center; }
 }
 
 .actors {
