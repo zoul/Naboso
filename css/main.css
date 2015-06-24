@@ -7,12 +7,12 @@ body {
 
 /* Header */
 
-.zahlavi {
+.header {
     border-bottom: 1px solid silver;
     margin-bottom: 20px;
 }
 
-.sluka-kolem {
+.woodcock-wrapper {
     width: 80%;
     padding-bottom: 54%;
     padding-left: 10%;
@@ -20,7 +20,7 @@ body {
     margin-bottom: 40px;
 }
 
-.sluka {
+.woodcock {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -32,7 +32,7 @@ body {
     text-align: center;
 }
 
-.herci {
+.actors {
     width: 100%;
     padding-bottom: 100%;
     background: url(/img/herci.jpg);
@@ -57,7 +57,7 @@ h1 {
 
 /* Animations */
 
-.sluka {
+.woodcock {
     -moz-animation: 5s ease 0s normal none infinite swing;
     -moz-transform-origin: center top;
     -webkit-animation:swing 5s infinite ease-in-out;
