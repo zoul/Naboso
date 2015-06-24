@@ -13,8 +13,8 @@ body {
 }
 
 .sluka {
-    width: 420px;
-    height: 290px;
+    width: 400px;
+    height: 270px;
     background: url(/img/sluka.jpg);
     background-size: cover;
     margin-bottom: 40px;
