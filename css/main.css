@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Dosis&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,400italic&subset=latin,latin-ext);
 
 body {
     background: black;
@@ -39,11 +40,33 @@ body {
     background-size: cover;
 }
 
-h1 {
+/* Menu */
+
+ul.menu {
+    font-family: Dosis, sans-serif;
+    text-transform: uppercase;
+    font-size: 150%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
     margin-bottom: 40px;
 }
 
+.menu li {
+    display: inline-block;
+}
+
+.menu li:not(:last-child) {
+    margin-right: 2ex;
+}
+
 /* Typography */
+
+body {
+    font-family: 'PT Serif', serif;
+    font-size: 19px;
+    line-height: 1.5em;
+}
 
 h1, h2, h3 {
     text-transform: uppercase;
@@ -52,7 +75,16 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 300%;
+}
+
+a {
+    color: #73fdff;
+}
+
+a:hover {
+    color: yellow;
+    text-decoration: none;
 }
 
 /* Animations */
