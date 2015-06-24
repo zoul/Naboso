@@ -7,8 +7,11 @@ layout: main
 <div class="container">
     <div class="row">
         <div class="col-lg-10 col-lg-offset-1 col-xs-12">
+            {% assign total = 0 %}
             {% for year in site.data.predstaveni %}
-            <h2>{{ year.rok }}  <small>{{ year.predstaveni | size }} představení</small></h2>
+            {% assign subtotal = year.predstaveni | size %}
+            {% assign total = total | plus:subtotal %}
+            <h2>{{ year.rok }}  <small>{{ subtotal }} představení</small></h2>
             <ul class="nice">
             {% for gig in year.predstaveni %}
                 <li>
@@ -21,6 +24,7 @@ layout: main
             {% endfor %}
             </ul>
             {% endfor %}
+            <p>Celkem {{ total }} představení. Uf.</p>
         </div>
     </div>
 </div>
