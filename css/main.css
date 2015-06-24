@@ -95,6 +95,20 @@ a:hover {
     text-decoration: none;
 }
 
+em {
+    color: white;
+}
+
+ul.nice {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.nice li:before {
+    content: "— ";
+}
+
 /* Animations */
 
 .woodcock {

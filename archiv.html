@@ -6,7 +6,20 @@ layout: main
 <div class="container">
     <div class="row">
         <div class="col-lg-10 col-lg-offset-1 col-xs-12">
-            <h2>Archiv</h2>
+            {% for year in site.data.predstaveni %}
+            <h2>{{ year.rok }}  <small>{{ year.predstaveni | size }} představení</small></h2>
+            <ul class="nice">
+            {% for gig in year.predstaveni %}
+                <li>
+                    {{ gig.kdy }}
+                    <span class="text-muted">&middot;</span>
+                    <em>{{ gig.co }}</em>
+                    <span class="text-muted">&middot;</span>
+                    {{ gig.kde }}
+                </li>
+            {% endfor %}
+            </ul>
+            {% endfor %}
         </div>
     </div>
 </div>
