@@ -61,6 +61,10 @@ ul.menu {
     margin-right: 2ex;
 }
 
+body.index li.index a, body.archiv li.archiv a, body.inscenace li.inscenace a {
+    border-bottom: 0.1em solid #73fdff;
+}
+
 /* Footer */
 
 .footer {
