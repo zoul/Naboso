@@ -42,7 +42,7 @@ body {
 }
 
 body.inscenace .actors { background-image: url(/img/herci2.jpg); }
-body.archiv .actors { background-image: url(/img/herci3.jpg); }
+body.predstaveni .actors { background-image: url(/img/herci3.jpg); }
 
 /* Menu */
 
@@ -54,6 +54,7 @@ ul.menu {
     padding: 0;
     list-style: none;
     margin-bottom: 40px;
+    margin-top: 5px;
 }
 
 .menu li {
@@ -64,7 +65,7 @@ ul.menu {
     margin-right: 2ex;
 }
 
-body.index li.index a, body.archiv li.archiv a, body.inscenace li.inscenace a {
+body.index li.index a, body.predstaveni li.predstaveni a, body.inscenace li.inscenace a {
     border-bottom: 0.1em solid #73fdff;
 }
 

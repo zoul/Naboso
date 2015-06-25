@@ -1,12 +1,31 @@
 ---
-title: Archiv
-class: archiv
+title: Představení
+class: predstaveni
 layout: main
 ---
 
 <div class="container">
     <div class="row">
         <div class="col-lg-10 col-lg-offset-1 col-xs-12">
+            <h2>Aktuální představení</h2>
+            {% assign this_year = site.data.predstaveni | first %}
+            {% assign current_gigs = (this_year.predstaveni | where: "aktualni", "ano") %}
+            {% if current_gigs == empty %}
+                <p>Nejsou.</p>
+            {% else %}
+                <ul class="nice">
+                {% for gig in current_gigs %}
+                    <li>
+                        {{ gig.kdy }}
+                        <span class="text-muted"> / </span>
+                        <em>{{ gig.co }}</em>
+                        <span class="text-muted"> / </span>
+                        {{ gig.kde }}
+                    </li>
+                {% endfor %}
+                </ul>
+            {% endif %}
+
             {% assign total = 0 %}
             {% for year in site.data.predstaveni %}
             {% assign subtotal = year.predstaveni | size %}
@@ -14,6 +33,7 @@ layout: main
             <h2>{{ year.rok }}  <small>{{ subtotal }} představení</small></h2>
             <ul class="nice">
             {% for gig in year.predstaveni %}
+                {% if gig.aktualni == nil %}
                 <li>
                     {{ gig.kdy }}
                     <span class="text-muted"> / </span>
@@ -21,6 +41,7 @@ layout: main
                     <span class="text-muted"> / </span>
                     {{ gig.kde }}
                 </li>
+                {% endif %}
             {% endfor %}
             </ul>
             {% endfor %}
