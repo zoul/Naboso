@@ -120,6 +120,11 @@ ul.nice {
     left: -2.2ex;
 }
 
+i {
+    color: white;
+    font-weight: bold;
+}
+
 /* Animations */
 
 .woodcock {
