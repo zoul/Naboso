@@ -61,8 +61,20 @@ layout: main
             Ludmila Dobrozemská; <i>režie:</i> Tomáš Trumpeš. <i>Délka
             představení:</i> 25 minut.</p>
  
-            <h2>Starší inscenace</h2>
-            <p>Doplníme později.</p>
+            <h2>Starší inscenace <small>nehrajeme, vzpomínáme</small></h2>
+            {% assign stareInscenace = site.data.inscenace | sort: "rok" %}
+            <ul class="nice">
+            {% for inscenace in stareInscenace reversed %}
+                {% if inscenace.hrajeme != true %}
+                <li>
+                    {{ inscenace.nazev }} ({{ inscenace.rok }})<br>
+                    <span class="text-muted">
+                        {% if inscenace.podtitul %}{{ inscenace.podtitul }} – {% endif %}
+                        {{ inscenace.typ }}
+                    </span>
+                {% endif %}
+            {% endfor %}
+            </ul>
         </div>
     </div>
 </div>
