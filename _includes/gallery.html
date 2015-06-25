@@ -1,7 +1,7 @@
 <div class="row gallery">
     {% for photo in site.data.fotky[include.id] %}
     <div class="col-xs-12 col-sm-6 col-md-3">
-        <a href="{{ photo.url }}" class="thumbnail">
+        <a href="{{ photo.url }}" class="fancybox thumbnail" rel="{{ include.id }}">
             <img src="{{ photo.nahled }}" alt="{{ photo.alt }}">
         </a>
     </div>
