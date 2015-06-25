@@ -73,6 +73,13 @@ body.index li.index a, body.archiv li.archiv a, body.inscenace li.inscenace a {
     border-top: 1px solid silver;
 }
 
+/* Photos */
+
+.gallery {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
 /* Typography */
 
 body {

@@ -16,9 +16,9 @@ layout: main
             {% for gig in year.predstaveni %}
                 <li>
                     {{ gig.kdy }}
-                    <span class="text-muted">&middot;</span>
+                    <span class="text-muted"> / </span>
                     <em>{{ gig.co }}</em>
-                    <span class="text-muted">&middot;</span>
+                    <span class="text-muted"> / </span>
                     {{ gig.kde }}
                 </li>
             {% endfor %}
