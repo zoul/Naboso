@@ -33,7 +33,6 @@ layout: main
             <h2>{{ year.rok }}  <small>{{ subtotal }} představení</small></h2>
             <ul class="nice">
             {% for gig in year.predstaveni %}
-                {% if gig.aktualni == nil %}
                 <li>
                     {{ gig.kdy }}
                     <span class="text-muted"> / </span>
@@ -41,7 +40,6 @@ layout: main
                     <span class="text-muted"> / </span>
                     {{ gig.kde }}
                 </li>
-                {% endif %}
             {% endfor %}
             </ul>
             {% endfor %}
