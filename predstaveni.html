@@ -9,7 +9,7 @@ layout: main
         <div class="col-lg-10 col-lg-offset-1 col-xs-12">
             <h2>Aktuální představení</h2>
             {% assign this_year = site.data.predstaveni | first %}
-            {% assign current_gigs = (this_year.predstaveni | where: "aktualni", "ano") %}
+            {% assign current_gigs = this_year.predstaveni | where: "aktualni", "ano" %}
             {% if current_gigs == empty %}
                 <p>Nejsou.</p>
             {% else %}
