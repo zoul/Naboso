@@ -20,7 +20,11 @@ layout: main
                         <span class="text-muted"> / </span>
                         <em>{{ gig.co }}</em>
                         <span class="text-muted"> / </span>
-                        {{ gig.kde }}
+                        {% if gig.url %}
+                            <a href="{{ gig.url }}">{{ gig.kde }}</a>
+                        {% else %}
+                            {{ gig.kde }}
+                        {% endif %}
                     </li>
                 {% endfor %}
                 </ul>
