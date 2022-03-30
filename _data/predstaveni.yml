@@ -3,11 +3,9 @@
     - co: Zvíře
       kdy: 25. března 19.00
       kde: Boskovice, Prostor
-      aktualni: ano
     - co: Zvíře
       kdy: 26. března 13.30
       kde: Hodonín, Hobblík
-      aktualni: ano
 - rok: 2021
   predstaveni:
     - co: Zvíře
@@ -215,7 +213,7 @@
       co: Uvařeno
       kde: Divadelní Piknik Volyně
     - kdy: 28. dubna
-      co:  Uvařeno
+      co: Uvařeno
       kde: BiGy Fest, Zámek Letovice
     - kdy: 28. dubna
       co: Magorův sbor
