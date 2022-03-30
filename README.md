@@ -6,5 +6,3 @@ Jak co změnit:
 * Změny se projeví prakticky okamžitě, maximálně do minuty.
 * Pokud vaše změna něco podstatného rozbije, asi vám o tom přijde automatický e-mail.
 * Prakticky nemůžete nic zničit (platí pouze pro úpravy tohoto webu). Pokud cokoliv pokazíte, dá se bez problémů přetočit na předchozí verzi webu.
-
-[![Build Status](https://travis-ci.org/zoul/Naboso.svg?branch=gh-pages)](https://travis-ci.org/zoul/Naboso)
