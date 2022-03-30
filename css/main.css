@@ -2,157 +2,183 @@
 @import url(https://fonts.googleapis.com/css?family=PT+Serif:400,400italic&subset=latin,latin-ext);
 
 body {
-    background: black;
-    color: #eee;
-    padding-bottom: 40px;
+  background: black;
+  color: #eee;
+  padding-bottom: 40px;
 }
 
 /* Header */
 
 .header {
-    border-bottom: 1px solid silver;
-    margin-bottom: 30px;
+  border-bottom: 1px solid silver;
+  margin-bottom: 30px;
 }
 
 .woodcock-wrapper {
-    width: 80%;
-    padding-bottom: 54%;
-    padding-left: 10%;
-    position: relative;
-    margin-bottom: 40px;
+  width: 80%;
+  padding-bottom: 54%;
+  padding-left: 10%;
+  position: relative;
+  margin-bottom: 40px;
 }
 
 .woodcock {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: url(/img/sluka.jpg);
-    background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(/img/sluka.jpg);
+  background-size: cover;
 }
 
 @media (max-width: 991px) {
-    .mala-pulka { text-align: center; }
+  .mala-pulka {
+    text-align: center;
+  }
 }
 
 .actors {
-    width: 100%;
-    padding-bottom: 100%;
-    background-image: url(/img/herci1.jpg);
-    background-size: cover;
+  width: 100%;
+  padding-bottom: 100%;
+  background-image: url(/img/herci1.jpg);
+  background-size: cover;
 }
 
-body.inscenace .actors { background-image: url(/img/herci2.jpg); }
-body.predstaveni .actors { background-image: url(/img/herci3.jpg); }
+body.inscenace .actors {
+  background-image: url(/img/herci2.jpg);
+}
+body.predstaveni .actors {
+  background-image: url(/img/herci3.jpg);
+}
 
 /* Menu */
 
 ul.menu {
-    font-family: Dosis, sans-serif;
-    text-transform: uppercase;
-    font-size: 150%;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    margin-bottom: 40px;
-    margin-top: 5px;
+  font-family: Dosis, sans-serif;
+  text-transform: uppercase;
+  font-size: 150%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 40px;
+  margin-top: 5px;
 }
 
 .menu li {
-    display: inline-block;
+  display: inline-block;
 }
 
 .menu li:not(:last-child) {
-    margin-right: 2ex;
+  margin-right: 2ex;
 }
 
-body.index li.index a, body.predstaveni li.predstaveni a, body.inscenace li.inscenace a {
-    border-bottom: 0.1em solid #73fdff;
+body.index li.index a,
+body.predstaveni li.predstaveni a,
+body.inscenace li.inscenace a {
+  border-bottom: 0.1em solid #73fdff;
 }
 
 /* Footer */
 
 .footer {
-    margin-top: 40px;
-    padding-top: 20px;
-    border-top: 1px solid silver;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid silver;
 }
 
 /* Photos */
 
 .gallery {
-    margin-top: 30px;
-    margin-bottom: 15px;
+  margin-top: 30px;
+  margin-bottom: 15px;
 }
 
 /* Typography */
 
 body {
-    font-family: 'PT Serif', serif;
-    font-size: 19px;
-    line-height: 1.5em;
+  font-family: "PT Serif", serif;
+  font-size: 19px;
+  line-height: 1.5em;
 }
 
-h1, h2, h3 {
-    text-transform: uppercase;
-    font-family: Dosis, sans-serif;
-    color: #ff7e79;
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+  font-family: Dosis, sans-serif;
+  color: #ff7e79;
 }
 
-h1 { font-size: 300%; }
-h2 { font-size: 150%; }
+h1 {
+  font-size: 300%;
+}
+h2 {
+  font-size: 150%;
+}
 
 a {
-    color: #73fdff;
+  color: #73fdff;
 }
 
 a:hover {
-    color: yellow;
-    text-decoration: none;
+  color: yellow;
+  text-decoration: none;
 }
 
 em {
-    color: white;
+  color: white;
 }
 
 ul.nice {
-    list-style: none;
-    margin-left: 0;
-    padding-left: 0;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 .nice li {
-    position: relative;
+  position: relative;
 }
 
 .nice li:before {
-    content: "— ";
-    display: block;
-    position: absolute;
-    left: -2.2ex;
+  content: "— ";
+  display: block;
+  position: absolute;
+  left: -2.2ex;
 }
 
 i {
-    color: white;
-    font-weight: bold;
+  color: white;
+  font-weight: bold;
 }
 
 /* Animations */
 
 .woodcock {
-    -moz-animation: 5s ease 0s normal none infinite swing;
-    -moz-transform-origin: center top;
-    -webkit-animation:swing 5s infinite ease-in-out;
-    -webkit-transform-origin:top;
+  -moz-animation: 5s ease 0s normal none infinite swing;
+  -moz-transform-origin: center top;
+  -webkit-animation: swing 5s infinite ease-in-out;
+  -webkit-transform-origin: top;
 }
 
 @-moz-keyframes swing {
-    0%   { -moz-transform:rotate(-2deg) }
-    50%  { -moz-transform:rotate(+2deg) }
-    100% { -moz-transform:rotate(-2deg) }
+  0% {
+    -moz-transform: rotate(-2deg);
+  }
+  50% {
+    -moz-transform: rotate(+2deg);
+  }
+  100% {
+    -moz-transform: rotate(-2deg);
+  }
 }
 
 @-webkit-keyframes swing {
-    0%   { -webkit-transform:rotate(-2deg) }
-    50%  { -webkit-transform:rotate(+2deg) }
-    100% { -webkit-transform:rotate(-2deg) }
+  0% {
+    -webkit-transform: rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: rotate(+2deg);
+  }
+  100% {
+    -webkit-transform: rotate(-2deg);
+  }
 }
