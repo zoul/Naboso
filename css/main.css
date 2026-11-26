@@ -1,10 +1,119 @@
 @import url(https://fonts.googleapis.com/css?family=Dosis&subset=latin,latin-ext);
 @import url(https://fonts.googleapis.com/css?family=PT+Serif:400,400italic&subset=latin,latin-ext);
 
+/* Base / reset (replaces Bootstrap normalize) */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
 body {
+  margin: 0;
   background: black;
   color: #eee;
   padding-bottom: 40px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+/* Grid (replaces Bootstrap container/row/col) */
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.row > [class^="col-"],
+.row > [class*=" col-"] {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Mobile first: columns are full width by default */
+[class^="col-"],
+[class*=" col-"] {
+  position: relative;
+  width: 100%;
+}
+
+/* >= 768px (Bootstrap sm) */
+@media (min-width: 768px) {
+  .col-sm-6 {
+    width: 50%;
+  }
+}
+
+/* >= 992px (Bootstrap md) */
+@media (min-width: 992px) {
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+}
+
+/* >= 1200px (Bootstrap lg) */
+@media (min-width: 1200px) {
+  .col-lg-5 {
+    width: 41.66666667%;
+  }
+  .col-lg-10 {
+    width: 83.33333333%;
+  }
+  .col-lg-offset-1 {
+    margin-left: 8.33333333%;
+  }
+}
+
+/* Utilities (replaces Bootstrap helpers) */
+
+.text-muted {
+  color: #777;
+}
+
+.thumbnail {
+  display: block;
+  padding: 4px;
+  margin-bottom: 20px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* hidden-sm + hidden-xs together: hidden below the md breakpoint */
+@media (max-width: 991px) {
+  .hidden-sm,
+  .hidden-xs {
+    display: none;
+  }
 }
 
 /* Header */
@@ -107,6 +216,10 @@ h3 {
   text-transform: uppercase;
   font-family: Dosis, sans-serif;
   color: #ff7e79;
+  font-weight: 500;
+  line-height: 1.1;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 h1 {
@@ -116,8 +229,22 @@ h2 {
   font-size: 150%;
 }
 
+h1 small {
+  font-weight: normal;
+  line-height: 1;
+  color: #777;
+}
+h2 small,
+h3 small {
+  font-size: 65%;
+  font-weight: normal;
+  line-height: 1;
+  color: #777;
+}
+
 a {
   color: #73fdff;
+  text-decoration: none;
 }
 
 a:hover {
