@@ -181,6 +181,16 @@ ul.menu {
   margin-right: 2ex;
 }
 
+/* Stack menu items one per line on very narrow displays */
+@media (max-width: 480px) {
+  .menu li {
+    display: block;
+  }
+  .menu li:not(:last-child) {
+    margin-right: 0;
+  }
+}
+
 body.index li.index a,
 body.predstaveni li.predstaveni a,
 body.inscenace li.inscenace a {
